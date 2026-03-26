@@ -149,3 +149,48 @@ yet_another_age_variable += 1
 
 print(f"Oh, wait, you're turning {yet_another_age_variable} years old next year. Neat.")
 # PRINTS "Oh, wait, you're turning 22 years old next year. Neat."
+
+
+
+# IF STATEMENTS
+#=======================================================================================================================
+# If statements execute basic decision-making; a code is executed only IF a condition is true (if, elif, else).
+
+userAge = int(input("Enter your age: "))
+
+if userAge >= 1000:
+    print(f"What the hell-???")
+elif userAge >= 18:
+    print(f"You are of legal age.")
+elif userAge < 0:
+    print(f"You are not of this world.")
+elif userAge == 0:
+    print(f"Seriously?")
+else:
+    print(f"You are not of legal age.")
+
+# If the condition is true in which the user inputs an integer greater than 18, it will PRINT "You are of legal age."
+# otherwise, "You are not of legal age." will be printed instead.
+# The order of the if-else statements matter in Python.
+
+ageOfAPerson = int(input("Enter your age: "))
+doTheyHaveATicket = True
+ticketPrice = 10.00
+
+if ageOfAPerson >= 65:
+    print("You are a senior citizen.")
+    print(f"The ticket price for a senior citizen is {ticketPrice * 0.75}.")
+elif ageOfAPerson >= 18:
+    print("You are an adult.")
+elif ageOfAPerson <= 18:
+    print("You are a minor.")
+    print(f"The ticket price for a minor is {ticketPrice * 0.5}.")
+elif ageOfAPerson <= -1:
+    print("Seriously?")
+else:
+    print("...")
+
+if doTheyHaveATicket:
+    print("You have a ticket.")
+else:
+    print("You do not have a ticket.")
