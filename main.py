@@ -211,3 +211,29 @@ if localTemp >= 25 and isRaining:
     print("The temperature is too high, and it is currently raining.")
 else:
     print("The weather is just fair.")
+
+
+
+# LOOPS
+#=======================================================================================================================
+# A while loop is used to repeat a block of code as long as the condition is true.
+
+#condition = 1
+#
+#while condition == 1:
+#    print("I am stuck in a loop")
+#    PRINTS the print statement repeatably without no end. This is not recommended.
+
+thisIsYetAnotherName = input("Enter your name: ")
+
+while thisIsYetAnotherName == "":
+    print("Sorry, your name is invalid.")
+    thisIsYetAnotherName = input("Please enter your name: ")
+print(f"Hello, {thisIsYetAnotherName}!")
+
+thisIsYetAnotherAge = int(input("Enter your age: "))
+
+while thisIsYetAnotherAge < 0 or thisIsYetAnotherAge > 150:
+    print("Sorry, your age is invalid.")
+    thisIsYetAnotherAge = int(input("Please enter your age: "))\
+print(f"You are {thisIsYetAnotherAge} years old.")
