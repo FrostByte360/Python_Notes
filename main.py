@@ -194,3 +194,20 @@ if doTheyHaveATicket:
     print("You have a ticket.")
 else:
     print("You do not have a ticket.")
+
+
+
+# LOGICAL OPERATORS
+#=======================================================================================================================
+# Logical operators allow us to evaluate multiple conditions (or, and, not).
+# OR   :  At least one condition is true.
+# AND  :  Both conditions must be true.
+# NOT  :  Inverts the condition.
+
+localTemp = 25
+isRaining = False
+
+if localTemp >= 25 and isRaining:
+    print("The temperature is too high, and it is currently raining.")
+else:
+    print("The weather is just fair.")
