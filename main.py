@@ -125,3 +125,27 @@ print(name)
 # PRINTS "True"
 # However, if the string variable is empty or null, the output will return false.
 # this is useful for checking if the user has typed their name as an input or not.
+
+
+# USER INPUT
+#=======================================================================================================================
+# In order to accept user input, an input() function is used.
+
+fruit = input("Enter your favorite fruit: ")
+print(fruit)
+# PRINTS "Oranges"
+
+print(f"That's nice. I see you like {fruit}. Awesome!")
+# PRINTS "That's nice. I see you like Orange. Awesome!"
+
+age = input("How old are you? ")
+print(f"Damn, you are {age} years old.")
+# PRINTS "Damn, you are 25 years old."
+
+# User inputs are always of the string datatype. Typecasting may be used for other datatypes.
+
+yet_another_age_variable = int(input("How old are you again? "))
+yet_another_age_variable += 1
+
+print(f"Oh, wait, you're turning {yet_another_age_variable} years old next year. Neat.")
+# PRINTS "Oh, wait, you're turning 22 years old next year. Neat."
