@@ -214,7 +214,7 @@ else:
 
 
 
-# LOOPS
+# WHILE LOOPS
 #=======================================================================================================================
 # A while loop is used to repeat a block of code as long as the condition is true.
 
@@ -235,5 +235,47 @@ thisIsYetAnotherAge = int(input("Enter your age: "))
 
 while thisIsYetAnotherAge < 0 or thisIsYetAnotherAge > 150:
     print("Sorry, your age is invalid.")
-    thisIsYetAnotherAge = int(input("Please enter your age: "))\
+    thisIsYetAnotherAge = int(input("Please enter your age: "))
 print(f"You are {thisIsYetAnotherAge} years old.")
+
+
+
+# FOR LOOPS
+#=======================================================================================================================
+# A for loop is used to reiterate over a sequence such as a string, list, tuple, or set. It repeats a block of code an
+# exact amount of time.
+
+for i in range(10):
+    print(i)
+# PRINTS from 0 to 9, containing the 10 elements within the set index.
+
+for a in range(1, 20):
+    print(a)
+# PRINTS from 1 to 19. The first number is inclusive, the second number is exclusive; the loop will begin counting from
+# the inclusive number, ending with at the range before the exclusive number.
+
+for x in range(0, 11, 2):
+    print(x)
+# PRINTS from 0 to 10. However, the index is incremented by 2.
+
+nameOfAPerson = "Integral Calculus"
+
+for everyLetter in nameOfAPerson:
+    print(everyLetter)
+# PRINTS every letter on a new line.
+
+nameOfASecondPerson = "Differential Calculus"
+
+for everyLetter in nameOfASecondPerson:
+    print(everyLetter, end=" ")
+# PRINTS every letter with a space.
+
+print("")
+
+# COUNTDOWN SIMULATION
+
+import time
+for counter in range(10, 0, -1):
+    print(counter)
+    time.sleep(1) # seconds
+print("Happy New Year!")
