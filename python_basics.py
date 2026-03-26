@@ -309,13 +309,16 @@ print(IHaveAFruit[3])
 # within the variable itself.
 
 IHaveAFruit[1] = "Coconut"
+print(IHaveAFruit)
 # Mango now becomes Coconut.
 
 IHaveAFruit.append("Guava")
+print(IHaveAFruit)
 # Adds Guava at the end of the list.
 # push()
 
 IHaveAFruit.remove("Banana")
+print(IHaveAFruit)
 # Removes the Banana from the list.
 # delete()
 
@@ -333,6 +336,7 @@ IHaveAFruit = ("Banana", "Mango", "Papaya", "Orange")
 
 # Sets
 IHaveAFruit = {"Banana", "Mango", "Papaya", "Orange"}
+print(IHaveAFruit)
 # Elements could be added or removed, but can never be replaced or modified.
 # Whenever a set is printed, the order of elements will be printed at random.
 # Sets do not support item assignment.
