@@ -70,7 +70,8 @@ print(f"My friends decided to get some more, and now I have {pie_slices} pie sli
 # PRINTSMy friends decided to get some more, and now I have 3.0 pie slices.
 
 pie_slices %= 3
-print(f"I finally finished the whole pie. I now have a total of {pie_slices} pie slices. Since there's nothing left anymore.")
+print(f"I finally finished the whole pie. I now have a total of {pie_slices} pie slices. Since there's nothing left"
+      f"anymore.")
 # PRINTS "I finally finished the whole pie. I now have a total of 0.0 pie slices. Since there's nothing left anymore."
 
 
@@ -279,3 +280,70 @@ for counter in range(10, 0, -1):
     print(counter)
     time.sleep(1) # seconds
 print("Happy New Year!")
+
+
+
+# LIST, TUPLES, SETS
+#=======================================================================================================================
+# Lists, tuples, and sets are all similar to arrays. However, in Python, there three different varieties with each
+# their own benefits.
+
+#   LIST []  =  Mutable, refelxive
+#   TUPLE () =  immutable, fast
+#   SET {}   =  mutable (can add or remove), unordered, no dupplications, best for membership testing
+
+# List
+# Index           0         1        2         3
+IHaveAFruit = ["Banana", "Mango", "Papaya", "Orange"]
+print(IHaveAFruit)
+# It prints out the entire list, including the brackets.
+# To access one of the elements within the list, an index pointer operator is used.
+
+print(IHaveAFruit[3])
+# PRINTS "Papaya"
+# If an attempt is made to access an element that doesn't exist, an error will occur. Index will be out of range.
+
+# In order to change one of the elements at a given index, an index operator is used once more by reassigning the value
+# within the variable itself.
+
+IHaveAFruit[1] = "Coconut"
+# Mango now becomes Coconut.
+
+IHaveAFruit.append("Guava")
+# Adds Guava at the end of the list.
+# push()
+
+IHaveAFruit.remove("Banana")
+# Removes the Banana from the list.
+# delete()
+
+IHaveAFruit.pop("Orange")
+# Pops the Banana from the list.
+# pop()
+
+IHaveAFruit.clear()
+# Removes the elements from the list.
+
+
+# Tuples
+IHaveAFruit = ("Banana", "Mango", "Papaya", "Orange")
+# This list can't be changed whatsoever.
+
+# Sets
+IHaveAFruit = {"Banana", "Mango", "Papaya", "Orange"}
+# Elements could be added or removed, but can never be replaced or modified.
+# Whenever a set is printed, the order of elements will be printed at random.
+# Sets do not support item assignment.
+# An element can be added by using the .add() function.
+# An element can be removed by using the .remove() function.
+# An element can be popped by using the .pop() function.
+
+# Simple Search Example Using a Set
+
+missingPerson = {"Erodeus", "Chermainia", "Ignacious", "Rutherford", "Mark", "Christina", "Arubeus", "Maximus"}
+personName = input(f"Enter the name of the victim: ")
+
+if personName in missingPerson:
+    print(f"Sorry, {personName} is among the list of victims.")
+else:
+    print(f"Apologies, {personName} is not among the list of victims.")
