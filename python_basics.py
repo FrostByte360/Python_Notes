@@ -353,3 +353,66 @@ if personName in missingPerson:
     print(f"Sorry, {personName} is among the list of victims.")
 else:
     print(f"Apologies, {personName} is not among the list of victims.")
+    
+# STRING CONCATENATION
+#=======================================================================================================================
+# Concatenation using JOIN
+girly = ["Goodness", "Gracious..."]
+girly2 = ["Ikaw", "yung", "nag", "shoplift..."]
+statement = " ".join(girly)
+statement2 = " ".join(girly2)
+print(statement)
+print(statement2)
+
+# Concatenation using direct operator
+print("Technological " + "University " + "Of the " + "Philippines " + "- Visayas")
+
+# Concatenation using format
+theNameOfAPerson = "Hans Noe D. Baldomer"
+theAgeOfAPerson = 21
+theStatusOfAPerson = "Alive"
+theResidencyOfAPerson = "Victorias City"
+theOccupancyofAPerson = "Student"
+
+print("\nName: {}\nAge: {}\nStatus: {}\nResidency: {}\nOccupancy: {}".format(theNameOfAPerson, theAgeOfAPerson, theStatusOfAPerson, theResidencyOfAPerson, theOccupancyofAPerson))
+
+name = "Hans Noe Baldomer"
+age = 21
+
+print(f"{name} is {age} years old")
+
+# FUNCTION
+#=======================================================================================================================
+def welcomeMessage(traveller):
+    print("Welcome to Albion Online, " + traveller + "!")
+
+player_name = input("Enter player name: ")
+
+welcomeMessage(player_name)
+
+def warning():
+    print("Warning, you are now entering the ecological deadzone.")
+
+warning()
+
+def add(x, y):
+    return x + y
+
+numberA = int(input("Enter a number x: "))
+numberB = int(input("Enter a number y: "))
+
+result = add(numberA, numberB)
+print(result)
+
+# FUNCTION WITH DEFAULT PARAMETERS
+#=======================================================================================================================
+
+def calculate(a, b):
+    return a + b, a - b, a * b, a / b
+
+add, subtract, multiply, divide = calculate(5, 10)
+
+print(add, subtract, multiply, divide)
+
+dish = input("Enter a dish: ")
+print(dish)
