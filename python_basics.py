@@ -353,7 +353,7 @@ if personName in missingPerson:
     print(f"Sorry, {personName} is among the list of victims.")
 else:
     print(f"Apologies, {personName} is not among the list of victims.")
-    
+
 # STRING CONCATENATION
 #=======================================================================================================================
 # Concatenation using JOIN
